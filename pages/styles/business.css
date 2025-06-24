@@ -1,0 +1,173 @@
+.caveat-brush-regular {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.top {
+    padding-top: 100px;
+    height: max-content;
+}
+
+.wave-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ee8548;
+    height: 200px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.top-head {
+    background: linear-gradient(to bottom right, rgb(199, 199, 199), #ee8548, #ee8548);
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-head h1 {
+    font-size: 55px;
+    color: white;
+}
+
+.top-head h1 span {
+    font-family: cursive;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+    color: rgb(59, 59, 59);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+}
+
+.mained {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contain {
+    /* background-color: lightblue; */
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+/* .card-contain::before {
+    content: "";
+    background-image: url('../img/busfin1.jpg');
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    position: absolute;
+    inset: 0 0 ;
+} */
+
+.card {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #8d8d8d;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.new {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    color: rgb(255, 43, 43);
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.type {
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.type span {
+    background-color: rgba(232, 237, 242, 1);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.location {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: .5rem;
+    color: rgb(49, 49, 49);
+}
+
+.reviews {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.text {
+    /* background-color: lightblue; */
+    background: radial-gradient(50% 50% at 0% 50%, #d36423 0, #fff 100%);
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 30%;
+}
+
+.text h1 {
+    font-size: 50px;
+}
+
+.text h1 span {
+    color: #ee8548;
+}
+
+.img {
+    /* background-color: lightpink; */
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.imgg {
+    background-image: url('../img/busfin.jpg');
+    object-fit: contain;
+    width: 75%;
+    height: 45%;
+    border-radius: 20px;
+}
