@@ -123,7 +123,7 @@
 }
 
 .card:hover {
-    background: radial-gradient(65% 65% at 50% 75%, #ee8548 0, #fff 100%), #fff;
+    background: radial-gradient(65% 65% at 95% 5%, #ee8548 0, #fff 100%), #fff;
 }
 
 .card p {
