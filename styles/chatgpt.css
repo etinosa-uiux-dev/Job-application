@@ -1,0 +1,68 @@
+/* .message-box {
+    width: 300px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: sans-serif;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.more-text {
+    display: none;
+    margin-top: 10px;
+}
+
+.read-more-btn {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+} */
+
+.message-box {
+    width: 300px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.read-more-toggle {
+    display: none;
+}
+
+.preview {
+    display: block;
+}
+
+.more-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.read-more-toggle:checked ~ .more-text {
+    max-height: 200px; /* Adjust based on content */
+}
+
+.read-more-label {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Optional: Change label text when expanded */
+.read-more-toggle:checked ~ .read-more-label::after {
+    content: 'Read less';
+}
+
+.read-more-toggle:not(:checked) ~ .read-more-label::after {
+    content: 'Read more';
+}

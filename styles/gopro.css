@@ -1,0 +1,94 @@
+.gopro {
+    /* background-color: #5e5e5e; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro {
+    background: linear-gradient(to bottom left, #ee8548,#3b261a, #111111);
+    color: white;
+    width: 1500px;
+    height: 600px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    padding: 32px;
+}
+
+.pro-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px 0;
+}
+
+.pro-left h1 {
+    font-size: 35px;
+    font-family: cursive;
+}
+
+.pro-left h1 .one {
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pro-left h1 .two {
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ee8548;
+}
+
+.pro-head {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.pro-text {
+    width: 600px;
+    line-height: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.pro-btn {
+    color: white;
+    font-family: cursive;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background:
+        linear-gradient(#ee8548, purple) padding-box, /* Button background */
+        linear-gradient(90deg, #ff6ec4, #7873f5) border-box; /* Gradient border */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.pro-btn:hover {
+    transform: scale(1.1);
+}
+
+.pro-right {
+    height: 450px;
+    border-radius: 20px;
+}
+
+.pro-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.pro-right img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/chatgpt.css">
+
+</head>
+<body>
+    <!-- <div class="message-box">
+        <p>This is a short message preview...</p>
+        <div class="more-text">
+            <p>This is the extended message content that is shown when "Read more" is clicked. You can add as much text or even HTML elements here.</p>
+        </div>
+        <span class="read-more-btn">Read more</span>
+    </div> -->
+
+    <div class="message-box">
+        <p class="preview">This is a short message preview...</p>
+
+        <!-- Hidden checkbox controls toggle -->
+        <input type="checkbox" class="read-more-toggle" id="toggle1">
+
+        <!-- Extra content -->
+        <div class="more-text">
+            <p>This is the full extended message shown when "Read more" is activated. No JavaScript needed for this!</p>
+        </div>
+
+        <!-- Label acts as toggle button -->
+        <label for="toggle1" class="read-more-label"></label>
+    </div>
+
+    <script src=""></script>
+</body>
+</html>

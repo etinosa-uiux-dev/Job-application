@@ -1,0 +1,108 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/sectionbg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-top: 100px;
+    color: white;
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: transparent;
+    width: 1500px;
+    height: 400px;
+    /* border: 1px solid white; */
+}
+
+.container h1 {
+    font-size: 60px;
+}
+
+.search-container {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.search {
+    background-color: white;
+    display: flex;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.search:focus-within {
+    background-color: rgb(248, 248, 248);
+}
+
+.search input {
+    background: transparent;
+    width: 800px;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.search input::placeholder {
+    font-size: larger;
+}
+
+.search button {
+    background-color: rgb(61, 61, 61);
+    width: 48px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.search button:hover {
+    transform: scale(1.1);
+    /* background-color: rgb(121, 121, 121); */
+    background-color: #ee8548;
+}
+
+.searchbtns {
+    /* background-color: red; */
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+    padding: .5rem;
+}
+
+.searchbtns button {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.searchbtns button:hover {
+    background-color: #ee8548;
+    transform: scale(1.05);
+}

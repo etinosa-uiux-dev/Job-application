@@ -1,0 +1,13 @@
+.footer {
+    background-color: rgb(49, 49, 49);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 500;
+}

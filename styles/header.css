@@ -1,0 +1,86 @@
+/*
+green: #76eeb4
+orange: #d36423
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 1px 1px 8px #d36423;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
+}
+
+/* .header:hover {
+    background: radial-gradient(50% 50% at 0% 50%, #d36423 0, #fff 100%), #fff;
+} */
+
+.header img {
+    width: 200px;
+    transition: all 0.25s ease-in-out;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+.head-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.head-right .drop {
+    font-weight: 600;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.head-right .drop:hover {
+    background-color: #ee8548;
+    color: white;
+}
+
+.signin {
+    font-weight: 600;
+    color: grey;
+    text-decoration: none;
+}
+
+.signin:hover {
+    color: #ee8548;
+}
+
+.signup {
+    background: transparent;
+    font-weight: 600;
+    padding: .5rem;
+    border: 1px solid #ee8548;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.signup:hover {
+    background-color: #ee8548;
+    color: white;
+}

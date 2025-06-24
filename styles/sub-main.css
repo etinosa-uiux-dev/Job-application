@@ -1,0 +1,148 @@
+.sub-main {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: max-content;
+}
+
+.sub-main-c {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 1500px;
+}
+
+.sub-main-c h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    margin-bottom: 0;
+}
+
+.message-box {
+    width: 1500px;
+    padding: 15px;
+    background: #ee8548;
+    background: linear-gradient(to bottom right, #f17a35, #ee8548);
+    /* background-color: #ee8548; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.message-box1 {
+    width: 1500px;
+    padding: 15px;
+    background: #ee8548;
+    background: linear-gradient(to bottom right, #ee8548, #f17a35);
+    /* background-color: #ee8548; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.read-more-toggle {
+    display: none;
+}
+
+.preview {
+    color: white;
+    display: block;
+    line-height: 2;
+}
+
+.spans {
+    font-size: 20px;
+    color: black;
+}
+
+.spanned {
+    font-weight: 600;
+}
+
+.more-text {
+    color: white;
+    line-height: 2;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.3s ease;
+}
+
+.read-more-toggle:checked ~ .more-text {
+    max-height: 300px; /* Adjust based on content */
+}
+
+.read-more-label {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Optional: Change label text when expanded */
+.read-more-toggle:checked ~ .read-more-label::after {
+    content: 'Read less';
+}
+
+.read-more-toggle:not(:checked) ~ .read-more-label::after {
+    content: 'Read more';
+}
+
+.box {
+    /* background-color: red; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: .5rem;
+    padding-left: 0;
+    gap: 3rem;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .5rem;
+    width: 70px;
+    height: 70px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #ee8548;
+    text-decoration: none;
+}
+
+.card:hover {
+    background: radial-gradient(65% 65% at 50% 75%, #ee8548 0, #fff 100%), #fff;
+}
+
+.card p {
+    margin: 0;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.text {
+    color: grey;
+    text-decoration: none;
+    font-style: italic;
+    transition: all 0.25s ease-in-out;
+}
+
+.text:hover {
+    color: #d36423;
+    transform: scale(1.05);
+}
