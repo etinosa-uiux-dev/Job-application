@@ -117,7 +117,7 @@
     width: 100%;
     display: flex;
     justify-content: start;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
 }
 
@@ -140,6 +140,54 @@
     justify-content: start;
     gap: .5rem;
     color: rgb(49, 49, 49);
+}
+
+.message-box {
+    width: 1500px;
+    padding: 15px;
+    background: #ee8548;
+    background: linear-gradient(to bottom right, #f17a35, #ee8548);
+    /* background-color: #ee8548; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.message-box1 {
+    width: 1500px;
+    padding: 15px;
+    background: #ee8548;
+    background: linear-gradient(to bottom right, #ee8548, #f17a35);
+    /* background-color: #ee8548; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.preview {
+    color: white;
+    display: block;
+    line-height: 2;
+}
+
+.spans {
+    font-size: 20px;
+    color: black;
+}
+
+.spanned {
+    font-weight: 600;
+}
+
+.more-text {
+    color: white;
+    line-height: 2;
 }
 
 .reviews {
@@ -177,9 +225,9 @@
 }
 
 .imgg {
-    background-image: url('../img/busfin.jpg');
-    object-fit: contain;
-    width: 75%;
-    height: 45%;
+    background-image: url('../img/reviews.jpg');
+    object-fit: cover;
+    width: 100%;
+    height: 65%;
     border-radius: 20px;
 }

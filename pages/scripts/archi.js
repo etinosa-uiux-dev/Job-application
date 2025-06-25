@@ -1,33 +1,33 @@
 const jobs = [
     {
-        title: "Doctor",
+        title: "Architect",
         location: "United States, US",
         types: ["On-Site", "Full-Time"]
     },
     {
-        title: "Audiologist",
-        location: "California, US",
-        types: ["Hybrid", "Full-Time"]
+        title: "Urban Planner",
+        location: "Nigeria, NG",
+        types: ["On-Site", "Full-Time"]
     },
     {
-        title: "Speech Therapist",
+        title: "CAD Technician",
         location: "United Kingdom, GB",
-        types: ["On-Site", "Alternative Schedule"]
-    },
-    {
-        title: "Healthcare Assistant",
-        location: "Austria, AT",
         types: ["Hybrid", "Alternative Schedule"]
     },
     {
-        title: "Nurse",
+        title: "Design Manager",
+        location: "Austria, AT",
+        types: ["On-Site", "Full-Time"]
+    },
+    {
+        title: "BIM Cordinator",
         location: "San Francisco, CA",
         types: ["On-Site", "Full-Time"]
     },
     {
-        title: "Pharmacist",
+        title: "Construction Project Coordinator",
         location: "Belgium, BE",
-        types: ["On-site", "Alternative Schedule"]
+        types: ["On-site", "Full-Time"]
     }
 ];
 
@@ -36,23 +36,22 @@ const container = document.querySelector(".js-card-contain");
 displayJobs ();
 
 function displayJobs () {
-    jobs.forEach (job => {
+    jobs.forEach ( job => {
         const card = document.createElement ("a");
         card.href = "";
-        card.className = "card js-card"
+        card.className = "card js-card";
 
         card.innerHTML = `
             <div class="new">.New!.</div>
             <div class="title">${job.title}</div>
             <div class="type">
-                ${job.types.map (type => `<span>${type}</span>`).join("")}
+            ${job.types.map(type => `<span>${type}</span>`).join("")}
             </div>
             <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
-                ${job.location}
+            <i class="fa-solid fa-location-dot"></i>
+            ${job.location}
             </div>
         `
-
         container.appendChild (card);
     });
 }

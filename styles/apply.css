@@ -1,0 +1,24 @@
+.view {
+    background-color: rgb(233, 233, 233);
+    padding-top: 100px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.start {
+    /* background-color: rgb(233, 233, 233); */
+    background-color: white;
+    height: 800px;
+    width: 1000px;
+}
+
+.sim {
+    /* background-color: rgb(233, 233, 233); */
+    background-color: white;
+    height: 800px;
+    width: 300px;
+}

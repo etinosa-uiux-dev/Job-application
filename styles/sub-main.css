@@ -1,4 +1,5 @@
 .sub-main {
+    background-color: rgb(233, 233, 233);
     display: flex;
     justify-content: center;
     align-items: start;
@@ -96,7 +97,12 @@
     content: 'Read more';
 }
 
-.box {
+.busbox,
+.itbox,
+.salesbox,
+.createbox,
+.healthbox,
+.edubox {
     /* background-color: red; */
     display: flex;
     justify-content: start;
