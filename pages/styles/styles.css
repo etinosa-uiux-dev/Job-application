@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1100px;
+    height: max-content;
     background-color: rgb(233, 233, 233);
 }
 
@@ -71,6 +71,7 @@
 }
 
 .card-contain {
+    /* background-image: url('../img/background.jpg'); */
     /* background-color: lightblue; */
     padding: 2rem;
     display: grid;
