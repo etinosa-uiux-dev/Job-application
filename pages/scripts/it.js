@@ -2,7 +2,7 @@ const jobs = [
     {
         title: "Frontend Developer",
         location: "California, US",
-        types: ["On-100% Remote", "Full-Time"]
+        types: ["100% Remote", "Full-Time"]
     },
     {
         title: "UI/UX Designer",

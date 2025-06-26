@@ -7,13 +7,27 @@ const littleInfo = document.querySelector ('.littleinfo');
 
 // Get query parameter from URL
 const params = new URLSearchParams(window.location.search);
-let index = params.get('index');
+const category = params.get('category');
+const index = parseInt(params.get('index'));
 
-if (index !== null && bus[index]) {
+let jobList = [];
 
-    const selectedJob = bus [index];
+switch (category) {
+    case 'bus': jobList = bus; break;
+    case 'it': jobList = it; break;
+    case 'sales': jobList = sales; break;
+    case 'create': jobList = create; break;
+    case 'health': jobList = health; break;
+    case 'edu': jobList = edu; break;
+    default: jobList = [];
+}
 
-    console.log (bus[2]);
+if (!isNaN(index) && jobList[index]) {
+    
+    const selectedJob = jobList[index];
+
+
+    console.log (`${category}`,[index]);
 
     starthead.innerHTML = `
         <h1>Application  form for <span class="orangehead">${selectedJob.title}</span></h1>
@@ -41,7 +55,7 @@ if (index !== null && bus[index]) {
             Join <strong>${selectedJob.Company}</strong> as a dedicated <strong>${selectedJob.title}</strong> based in <strong>${selectedJob.location}</strong>. This is a <strong>${selectedJob.jobSchedule}</strong>, <strong>${selectedJob.jobType}</strong> opportunity where you'll play a key role for the organization and ensuring compliance. Competitive salary and growth potential included. <br> Applicants will receive a response within 5 - 7 business days after submission.
         </p>
 
-        <a href="./form.html?index=${index}" target="_blank">
+        <a href="./form.html?category=${category}&index=${index}" target="_blank">
             <button>APPLY HERE</button>
         </a>
 `

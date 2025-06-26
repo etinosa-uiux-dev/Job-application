@@ -84,174 +84,414 @@ export const bus = [
 export const it = [
     {
         image: '../img/fend.png',
-        title: 'Frontend Developer'
+        title: 'Frontend Developer',
+        location: "California, US",
+        types: ["100% Remote", "Full-Time"],
+        jobType: '100% Remote',
+        jobSchedule: 'Full-Time',
+        Company: 'BaD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/bend.png',
-        title: 'Backend Developer'
+        title: 'Backend Developer',
+        location: "Australia, AU",
+        types: ["100% Remote", "Full-Time"],
+        jobType: '100% Remote',
+        jobSchedule: 'Full-Time',
+        Company: 'BcD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/uiux.png',
-        title: 'UI/UX Designer'
+        title: 'UI/UX Designer',
+        location: "Austria, AT",
+        types: ["100% Remote", "Full-Time"],
+        jobType: '100% Remote',
+        jobSchedule: 'Full-Time',
+        Company: 'BeD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/itsupport.png',
-        title: 'IT Support'
+        title: 'IT Support',
+        location: "Sierra Leone, SL",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'BfD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/cloudengr.png',
-        title: 'Cloud Engineer'
+        title: 'Cloud Engineer',
+        location: "Lagos, NG",
+        types: ["Hybrid", "Alternative Schedules"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Alternative Schedules',
+        Company: 'BgD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/devops.png',
-        title: 'DevOps Engineer'
+        title: 'DevOps Engineer',
+        location: "San Francisco, CA",
+        types: ["100% Remote", "Full-Time"],
+        jobType: '100% Remote',
+        jobSchedule: 'Full-Time',
+        Company: 'BhD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/fullstk.png',
-        title: 'Full Stack Developer'
+        title: 'Full Stack Developer',
+        location: "Australia, AU",
+        types: ["100% Remote", "Alternative Schedule"],
+        jobType: '100% Remote',
+        jobSchedule: 'Alternative Schedules',
+        Company: 'BiD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/danalyst.png',
-        title: 'Data Analyst'
+        title: 'Data Analyst',
+        location: "California, US",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'BjD',
+        salary: '$100 - $800+'
     }
 ];
 
 export const sales = [
     {
         image: '../img/digitalmkt.png',
-        title: 'Digital Marketer'
+        title: 'Digital Marketer',
+        location: "Canada, CA",
+        types: ["100% Remote", "Full-Time"],
+        jobType: '100% Remote',
+        jobSchedule: 'Full-Time',
+        Company: 'CaD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/contcrt.png',
-        title: 'Content Creator'
+        title: 'Content Creator',
+        location: "United Kingdom, GB",
+        types: ["Hybrid", "Alternative Schedules"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Alternative Schedules',
+        Company: 'CbD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/salesexe.png',
-        title: 'Sales Executive'
+        title: 'Sales Executive',
+        location: "Lagos, NG",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'CeD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/brandmngr.png',
-        title: 'Brand Manager'
+        title: 'Brand Manager',
+        location: "China, CN",
+        types: ["On-Site", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'CfD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/prdctmkt.png',
-        title: 'Product Marketing'
+        title: 'Product Marketing',
+        location: "Spain, SP",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'CgD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/salesmngr.png',
-        title: 'Sales Manager'
+        title: 'Sales Manager',
+        location: "Mexico, MX",
+        types: ["Hybrid", "Alternative Schedule"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Alternative Schedules',
+        Company: 'ChD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/salesenblm.png',
-        title: 'Sales Enablement'
+        title: 'Sales Enablement',
+        location: "Nigeria, NG",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'CiD',
+        salary: '$100 - $800+'
     },
     {
         image: '../img/socialmedia.png',
-        title: 'Social Media'
+        title: 'Social Media',
+        location: "San Francisco, CA",
+        types: ["100% Remote", "Full-Time"],
+        jobType: '100% Remote',
+        jobSchedule: 'Full-Time',
+        Company: 'CjD',
+        salary: '$100 - $800+'
     }
 ];
 
 export const create = [
     {
         image: '../img/graphicdsgn.png',
-        title: 'Graphic Designer'
+        title: 'Graphic Designer',
+        location: "United States, US",
+        types: ["100% Remote", "Full-Time"],
+        jobType: '100% Remote',
+        jobSchedule: 'Full-Time',
+        Company: 'FaX',
+        salary: '$45 - $400+'
     },
     {
         image: '../img/uiux.png',
-        title: 'UI/UX Designer'
+        title: 'UI/UX Designer',
+        location: "Dominica, DM",
+        types: ["On-site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'FbX',
+        salary: '$45 - $400+'
     },
     {
         image: '../img/videoedtr.png',
-        title: 'Video Editor'
+        title: 'Video Editor',
+        location: "Bahamas,BS",
+        types: ["100% Remote", "Alternative Schedule"],
+        jobType: '100% Remote',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'FcX',
+        salary: '$45 - $400+'
     },
     {
         image: '../img/interiordsgn.png',
-        title: 'Interior Designer'
+        title: 'Interior Designer',
+        location: "United Kingdom, GB",
+        types: ["On-Site", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'FdX',
+        salary: '$45 - $400+'
     },
     {
         image: '../img/illustrator.png',
-        title: 'Illustrator'
+        title: 'Illustrator',
+        location: "Bangladesh, BD",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'FeX',
+        salary: '$45 - $400+'
     },
     {
         image: '../img/brandstgst.png',
-        title: 'Brand Strategist'
+        title: 'Brand Strategist',
+        location: "San Francisco, CA",
+        types: ["100% Remote", "Full-Time"],
+        jobType: '100% Remote',
+        jobSchedule: 'Full-Time',
+        Company: 'FgX',
+        salary: '$45 - $400+'
     },
     {
         image: '../img/animator.png',
-        title: 'Animator'
+        title: 'Animator',
+        location: "Japan, JP",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'FhX',
+        salary: '$45 - $400+'
     },
     {
         image: '../img/modeling.png',
-        title: 'Modeling'
+        title: 'Modeling',
+        location: "Mexico, MX",
+        types: ["On-site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'FiX',
+        salary: '$45 - $400+'
     }
 ];
 
 export const health = [
     {
         image: '../img/doctor.png',
-        title: 'Doctor'
+        title: 'Doctor',
+        location: "United States, US",
+        types: ["On-Site", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'HaQ',
+        salary: '$55 - $670+'
     },
     {
         image: '../img/nurse.png',
-        title: 'Nurse'
+        title: 'Nurse',
+        location: "San Francisco, CA",
+        types: ["On-Site", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'HbQ',
+        salary: '$55 - $670+'
     },
     {
         image: '../img/pharmacist.png',
-        title: 'Pharmacist'
+        title: 'Pharmacist',
+        location: "Belgium, BE",
+        types: ["On-site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'HcQ',
+        salary: '$55 - $670+'
     },
     {
         image: '../img/radiologist.png',
-        title: 'Radiologist'
+        title: 'Radiologist',
+        location: "California, US",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'HdQ',
+        salary: '$55 - $670+'
     },
     {
         image: '../img/physicalthrpts.png',
-        title: 'Physical Therapist'
+        title: 'Physical Therapist',
+        location: "Ecuador, EC",
+        types: ["On-site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'HeQ',
+        salary: '$55 - $670+'
     },
     {
         image: '../img/hlthcare.png',
-        title: 'Healthcare Assistant'
+        title: 'Healthcare Assistant',
+        location: "Austria, AT",
+        types: ["Hybrid", "Alternative Schedule"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'HfQ',
+        salary: '$55 - $670+'
     },
     {
         image: '../img/speechthrpst.png',
-        title: 'Speech Therapist'
+        title: 'Speech Therapist',
+        location: "United Kingdom, GB",
+        types: ["On-Site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'HgQ',
+        salary: '$55 - $670+'
     },
     {
         image: '../img/medlab.png',
-        title: 'Med Lab Scientist'
+        title: 'Med Lab Scientist',
+        location: "Denmark, DK",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Full-Time',
+        Company: 'HhQ',
+        salary: '$55 - $670+'
     }
 ];
 
 export const edu = [
     {
         image: '../img/curriculum.png',
-        title: 'Curriculum Developer'
+        title: 'Curriculum Developer',
+        location: "United States, US",
+        types: ["Hybrid", "Altenative Schedule"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'LaK',
+        salary: '$40 - $335+'
     },
     {
         image: '../img/counselor.png',
-        title: 'Academic Counselor'
+        title: 'Academic Counselor',
+        location: "California, US",
+        types: ["On-Site", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'LbK',
+        salary: '$40 - $335+'
     },
     {
         image: '../img/instructional.png',
-        title: 'Instructional Designer'
+        title: 'Instructional Designer',
+        location: "Greece, GR",
+        types: ["On-site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'LcK',
+        salary: '$40 - $335+'
     },
     {
         image: '../img/lecturer.png',
-        title: 'Lecturer / Professor'
+        title: 'Lecturer / Professor',
+        location: "United Kingdom, GB",
+        types: ["Hybrid", "Alternative Schedule"],
+        jobType: 'Hybrid',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'LdK',
+        salary: '$40 - $335+'
     },
     {
         image: '../img/elementary.png',
-        title: 'Elementary Tutor'
+        title: 'Elementary Tutor',
+        location: "Austria, AT",
+        types: ["On-Site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'LeK',
+        salary: '$40 - $335+'
     },
     {
         image: '../img/adult.png',
-        title: 'Adult Education'
+        title: 'Adult Education',
+        location: "San Francisco, CA",
+        types: ["On-Site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'LfK',
+        salary: '$40 - $335+'
     },
     {
         image: '../img/subtutor.png',
-        title: 'Substitute Tutor'
+        title: 'Substitute Tutor',
+        location: "Hungary, HU",
+        types: ["On-site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'LgK',
+        salary: '$40 - $335+'
     },
     {
         image: '../img/librarian.png',
-        title: 'Librarian'
+        title: 'Librarian',
+        location: "Belgium, BE",
+        types: ["On-site", "Alternative Schedule"],
+        jobType: 'On-Site',
+        jobSchedule: 'Alternative Schedule',
+        Company: 'LhK',
+        salary: '$40 - $335+'
     }
 ];

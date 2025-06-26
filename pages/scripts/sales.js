@@ -2,7 +2,7 @@ const jobs = [
     {
         title: "Digital Marketer",
         location: "Canada, CA",
-        types: ["On-100% Remote", "Full-Time"]
+        types: ["100% Remote", "Full-Time"]
     },
     {
         title: "Brand Manager",

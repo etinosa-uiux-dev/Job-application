@@ -1,19 +1,36 @@
-import { bus } from './jobs.js';
+import { bus, it, sales, create, health, edu } from './jobs.js';
 
 
 const formHead = document.querySelector ('.js-formhead');
 
 // Get query parameter from URL
 const params = new URLSearchParams(window.location.search);
-let index = params.get('index');
+const category = params.get('category');
+const index = parseInt(params.get('index'));
 
-if (index !== null && bus[index]) {
+let jobList = [];
 
-    const applyJob = bus [index];
+switch (category) {
+    case 'bus': jobList = bus; break;
+    case 'it': jobList = it; break;
+    case 'sales': jobList = sales; break;
+    case 'create': jobList = create; break;
+    case 'health': jobList = health; break;
+    case 'edu': jobList = edu; break;
+    default: jobList = [];
+}
+
+if (!isNaN(index) && jobList[index]) {
+
+    const applyJob = jobList[index];
 
     formHead.innerHTML = `
         <h2>Apply for: <span class="orangehead">${applyJob.title} (${applyJob.Company} - ${applyJob.location})</span></h2>
-    `
+    `;
+} else {
+    formHead.innerHTML = `
+    <h2>Application Form</h2><span class"orangehead">Job not found.</span>
+    `;
 }
 
 

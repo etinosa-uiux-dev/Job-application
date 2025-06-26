@@ -2,12 +2,12 @@ const jobs = [
     {
         title: "Graphic Designer",
         location: "United States, US",
-        types: ["On-100% Remote", "Full-Time"]
+        types: ["100% Remote", "Full-Time"]
     },
     {
         title: "Video Editor",
         location: "Bahamas,BS",
-        types: ["On-100% Remote", "Full-Time"]
+        types: ["100% Remote", "Full-Time"]
     },
     {
         title: "Interior Designer",

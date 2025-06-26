@@ -2,56 +2,32 @@ const jobs = [
     {
         title: "Accountant",
         location: "California, US",
-        types: ["On-Site", "Full-Time"],
-        jobType: 'On-Site',
-        jobSchedule: 'Full-Time',
-        Company: 'AbD',
-        salary: '$70 - $600+'
+        types: ["On-Site", "Full-Time"]
     },
     {
         title: "Task Consultant",
         location: "Australia, AU",
-        types: ["Hybrid", "Alternative Schedules"],
-        jobType: 'On-Site',
-        jobSchedule: 'Full-Time',
-        Company: 'AcD',
-        salary: '$70 - $600+'
+        types: ["Hybrid", "Alternative Schedules"]
     },
     {
         title: "Auditor",
         location: "Sierra Leone, SL",
-        types: ["Hybrid", "Full-Time"],
-        jobType: 'On-Site',
-        jobSchedule: 'Full-Time',
-        Company: 'AeD',
-        salary: '$70 - $600+'
+        types: ["Hybrid", "Full-Time"]
     },
     {
         title: "Loan Officer",
         location: "Lagos, NG",
-        types: ["Hybrid", "Alternative Schedules"],
-        jobType: 'On-Site',
-        jobSchedule: 'Full-Time',
-        Company: 'AfD',
-        salary: '$70 - $600+'
+        types: ["Hybrid", "Alternative Schedules"]
     },
     {
         title: "Economist",
         location: "San Francisco, CA",
-        types: ["100% Remote", "Full-Time"],
-        jobType: 'On-Site',
-        jobSchedule: 'Full-Time',
-        Company: 'AgD',
-        salary: '$70 - $600+'
+        types: ["100% Remote", "Full-Time"]
     },
     {
         title: "Risk Manager",
         location: "California, US",
-        types: ["Hybrid", "Full-Time"],
-        jobType: 'On-Site',
-        jobSchedule: 'Full-Time',
-        Company: 'AhD',
-        salary: '$70 - $600+'
+        types: ["Hybrid", "Full-Time"]
     }
 ];
 

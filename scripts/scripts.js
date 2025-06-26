@@ -25,7 +25,7 @@ window.onload = function () {
     function displayBus () {
         bus.forEach ( (bus, index) => {
             const busCard = document.createElement ('a');
-            busCard.href = `../apply.html?index=${index}`;
+            busCard.href = `../apply.html?category=bus&index=${index}`;
             busCard.className = 'card'
 
             busCard.innerHTML = `
@@ -53,9 +53,9 @@ window.onload = function () {
     displayIt ()
 
     function displayIt () {
-        it.forEach (it => {
+        it.forEach ( (it,index) => {
             const itCard = document.createElement ('a');
-            itCard.href = '';
+            itCard.href = `../apply.html?category=it&index=${index}`;
             itCard.className = 'card'
 
             itCard.innerHTML = `
@@ -79,9 +79,9 @@ window.onload = function () {
     displaySales ();
 
     function displaySales () {
-        sales.forEach (sale => {
+        sales.forEach ( (sale, index) => {
             const saleCard = document.createElement ('a');
-            saleCard.href = '';
+            saleCard.href = `../apply.html?category=sales&index=${index}`;
             saleCard.className = 'card'
 
             saleCard.innerHTML = `
@@ -105,9 +105,9 @@ window.onload = function () {
     displayCreate ();
 
     function displayCreate () {
-        create.forEach (create => {
+        create.forEach ( (create, index) => {
             const createCard = document.createElement ('a');
-            createCard.href = '';
+            createCard.href = `../apply.html?category=create&index=${index}`;
             createCard.className = 'card'
 
             createCard.innerHTML = `
@@ -131,9 +131,9 @@ window.onload = function () {
     displayHealth ();
 
     function displayHealth () {
-        health.forEach (health => {
+        health.forEach ( (health, index) => {
             const healthCard = document.createElement ('a');
-            healthCard.href = '';
+            healthCard.href = `../apply.html?category=health&index=${index}`;
             healthCard.className = 'card'
 
             healthCard.innerHTML = `
@@ -157,9 +157,9 @@ window.onload = function () {
     displayEdu ();
 
     function displayEdu () {
-        edu.forEach (edu => {
+        edu.forEach ( (edu, index) => {
             const eduCard = document.createElement ('a');
-            eduCard.href = '';
+            eduCard.href = `../apply.html?category=edu&index=${index}`;
             eduCard.className = 'card'
 
             eduCard.innerHTML = `

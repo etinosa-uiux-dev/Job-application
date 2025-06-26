@@ -81,7 +81,7 @@
 }
 
 .read-more-label {
-    color: black;
+    color: cyan;
     cursor: pointer;
     text-decoration: underline;
     display: inline-block;
