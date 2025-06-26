@@ -5,7 +5,7 @@ body {
 .view {
     background-color: rgb(233, 233, 233);
     padding-top: 100px;
-    height: 100vh;
+    height: 900px;
 
     display: flex;
     justify-content: center;
@@ -20,8 +20,12 @@ body {
     width: 1000px;
 }
 
-.start h1 {
+.starthead h1 {
     margin-left: 3rem;
+}
+
+.orangehead {
+    color: #ee8548;
 }
 
 .info {
@@ -49,8 +53,14 @@ body {
     padding: .5rem;
 }
 
+.nojob {
+    margin-left: 3rem;
+    color: red;
+    text-transform: uppercase;
+}
+
 .littleinfo {
-    width: 100%;
+    width: 80%;
     height: max-content;
     padding: .5rem 3rem;
     line-height: 25px;

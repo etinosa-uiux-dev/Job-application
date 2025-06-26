@@ -4,6 +4,10 @@ body {
     background: #f4f4f4;
 }
 
+.orangehead {
+    color: #ee8548;
+}
+
 form,
 .preview {
     background: #fff;

@@ -1,35 +1,83 @@
 export const bus = [
     {
         image: '../img/accountant.png',
-        title: 'Accountant'
+        title: 'Accountant',
+        location: "California, US",
+        types: ["On-Site", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'AbD',
+        salary: '$70 - $600+'
     },
     {
         image: '../img/fanalyst.png',
-        title: 'Financial Analyst'
+        title: 'Financial Analyst',
+        location: "Sierra Leone, SL",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'AeD',
+        salary: '$70 - $600+'
     },
     {
         image: '../img/tconsultant.png',
-        title: 'Task Consultant'
+        title: 'Task Consultant',
+        location: "Australia, AU",
+        types: ["Hybrid", "Alternative Schedules"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'AcD',
+        salary: '$70 - $600+'
     },
     {
         image: '../img/auditor.png',
-        title: 'Auditor'
+        title: 'Auditor',
+        location: "Sierra Leone, SL",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'AiD',
+        salary: '$70 - $600+'
     },
     {
         image: '../img/banalyst.png',
-        title: 'Business Analyst'
+        title: 'Business Analyst',
+        location: "Lagos, NG",
+        types: ["Hybrid", "Alternative Schedules"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'AfD',
+        salary: '$70 - $600+'
     },
     {
         image: '../img/accountant.png',
-        title: 'Economist'
+        title: 'Economist',
+        location: "San Francisco, CA",
+        types: ["100% Remote", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'AgD',
+        salary: '$70 - $600+'
     },
     {
         image: '../img/accountant.png',
-        title: 'Risk Manager'
+        title: 'Risk Manager',
+        location: "California, US",
+        types: ["Hybrid", "Full-Time"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'AhD',
+        salary: '$70 - $600+'
     },
     {
         image: '../img/accountant.png',
-        title: 'Loan Officer'
+        title: 'Loan Officer',
+        location: "Lagos, NG",
+        types: ["Hybrid", "Alternative Schedules"],
+        jobType: 'On-Site',
+        jobSchedule: 'Full-Time',
+        Company: 'AjD',
+        salary: '$70 - $600+'
     }
 ];
 

@@ -23,9 +23,9 @@ window.onload = function () {
     displayBus();
 
     function displayBus () {
-        bus.forEach (bus => {
+        bus.forEach ( (bus, index) => {
             const busCard = document.createElement ('a');
-            busCard.href = '';
+            busCard.href = `../apply.html?index=${index}`;
             busCard.className = 'card'
 
             busCard.innerHTML = `
@@ -36,6 +36,10 @@ window.onload = function () {
             `
 
             busBox.appendChild (busCard);
+
+            busCard.addEventListener ('click', () => {
+                console.log (index);
+            });
         });
 
         const viewMoreLink = document.createElement('a');
@@ -176,9 +180,3 @@ window.onload = function () {
         eduBox.appendChild(viewMoreLink);
     }
 }
-// const viewInfo = document.querySelector ('.js-view');
-
-// viewInfo.innerHTML = `
-//     <div class="start"></div>
-//     <div class="sim"></div>
-// `

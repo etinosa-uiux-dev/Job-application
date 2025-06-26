@@ -1,4 +1,23 @@
-function previewApplication() {
+import { bus } from './jobs.js';
+
+
+const formHead = document.querySelector ('.js-formhead');
+
+// Get query parameter from URL
+const params = new URLSearchParams(window.location.search);
+let index = params.get('index');
+
+if (index !== null && bus[index]) {
+
+    const applyJob = bus [index];
+
+    formHead.innerHTML = `
+        <h2>Apply for: <span class="orangehead">${applyJob.title} (${applyJob.Company} - ${applyJob.location})</span></h2>
+    `
+}
+
+
+window.previewApplication = function () {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
@@ -27,12 +46,12 @@ function previewApplication() {
         .classList.remove('hidden');
 }
 
-function editApplication() {
+window.editApplication = function () {
     document.getElementById('jobForm').classList.remove('hidden');
     document.getElementById('previewSection').classList.add('hidden');
 }
 
-function submitApplication() {
+window.submitApplication = function () {
     alert("Your application has been submitted!");
 
     document.getElementById('jobForm').reset();
