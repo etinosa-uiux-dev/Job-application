@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .view {
     background-color: rgb(233, 233, 233);
     padding-top: 100px;
