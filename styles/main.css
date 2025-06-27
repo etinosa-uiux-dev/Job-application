@@ -46,12 +46,13 @@
 }
 
 .search {
-    background-color: white;
+    background-color: rgb(248, 248, 248);;
     display: flex;
     gap: .5rem;
     padding: .5rem;
     padding-left: 1rem;
     border-radius: 50px;
+    position: relative;
 }
 
 .search:focus-within {
@@ -101,6 +102,27 @@
 
 .ibtn button i {
     font-size: 18px;
+}
+
+.searchresults {
+    position: absolute;
+    top: 50px;
+    left: 1px;
+    width: 50%;
+    max-height: 200px;
+    overflow: auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgb(248, 248, 248);
+    font-size: 18px;
+    display: none;
+}
+
+.searchresults a {
+    text-decoration: none;
+    color: black;
 }
 
 .searchbtns {

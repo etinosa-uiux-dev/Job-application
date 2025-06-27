@@ -1,5 +1,8 @@
 import { bus, it, sales, create, health, edu } from './jobs.js';
 
+import { archiJobs } from '../pages/scripts/6jobs.js';
+
+
 const busBox = document.querySelector ('.busbox');
 const itBox = document.querySelector ('.itbox');
 const salesBox = document.querySelector ('.salesbox');
@@ -7,12 +10,8 @@ const createBox = document.querySelector ('.createbox');
 const healthBox = document.querySelector ('.healthbox');
 const eduBox = document.querySelector ('.edubox');
 
-// displayBus ();
-// displayIt ();
-// displaySales ();
-// displayCreate ();
-// displayHealth ();
-// displayEdu ();
+const searchJobs = document.querySelector ('.js-search');
+const searchResults = document.querySelector ('.js-search-results');
 
 window.onload = function () {
     if (!busBox) {
@@ -178,5 +177,66 @@ window.onload = function () {
         viewMoreLink.innerHTML = '<p>view more ></p>';
 
         eduBox.appendChild(viewMoreLink);
+    }
+
+    searchJobs.addEventListener ('keyup', () => {
+        searching ();
+    });
+
+    function searching () {
+        const searchString = searchJobs.value.trim ().toLocaleLowerCase ();
+
+        searchResults.innerHTML = '';
+
+        const allJobs = [
+            { data: bus, category: 'bus' },
+            { data: it, category: 'it' },
+            { data: sales, category: 'sales' },
+            { data: create, category: 'create' },
+            { data: health, category: 'health' },
+            { data: edu, category: 'edu' },
+            { data: archiJobs, category: 'archi' }
+        ];
+
+        let matchedResults = [];
+
+        /* allJobs.filter  ( ({data, category}) => {
+
+            data.forEach ( (job, index) => {
+                if ( bus.title.toLocaleLowerCase ().includes (searchString)){
+                    .....
+                }
+            });
+        });*/
+
+        allJobs.filter  ( (jobGroup) => {
+            const data = jobGroup.data;
+            const category = jobGroup.category;
+
+            data.forEach ( (job, index) => {
+
+                if (job.title.toLocaleLowerCase ().includes (searchString)) {
+                    matchedResults.push({
+                        title: job.title,
+                        category: category,
+                        index: index
+                    });
+                }
+            });
+        });
+
+       matchedResults.forEach(result => {
+            const resultItem = `
+                <a href="../../apply.html?category=${result.category}&index=${result.index}">${result.title}</a>
+            `;
+            searchResults.innerHTML += resultItem;
+        });
+
+        if (!searchString || matchedResults.length === 0) {
+            searchResults.innerHTML = '<p>No results found.</p>';
+            searchResults.style.display = 'none';
+        } else {
+            searchResults.style.display = 'flex';
+        }
     }
 }
