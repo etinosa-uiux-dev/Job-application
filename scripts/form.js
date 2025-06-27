@@ -1,4 +1,5 @@
 import { bus, it, sales, create, health, edu } from './jobs.js';
+import { busJobs, itJobs, salesJobs, createJobs, healthJobs, eduJobs, archiJobs } from '../pages/scripts/6jobs.js';
 
 
 const formHead = document.querySelector ('.js-formhead');
@@ -17,6 +18,13 @@ switch (category) {
     case 'create': jobList = create; break;
     case 'health': jobList = health; break;
     case 'edu': jobList = edu; break;
+    case 'busJobs': jobList = busJobs; break;
+    case 'itJobs': jobList = itJobs; break;
+    case 'salesJobs': jobList = salesJobs; break;
+    case 'createJobs': jobList = createJobs; break;
+    case 'healthJobs': jobList = healthJobs; break;
+    case 'eduJobs': jobList = eduJobs; break;
+    case 'archiJobs': jobList = archiJobs; break;
     default: jobList = [];
 }
 
@@ -33,14 +41,22 @@ if (!isNaN(index) && jobList[index]) {
     `;
 }
 
+let resumeInput = document.getElementById('resume');
+let resume;
 
 window.previewApplication = function () {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const coverLetter = document.getElementById('coverLetter').value;
-    let resumeInput = document.getElementById('resume');
-    let resume;
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const coverLetter = document.getElementById('coverLetter').value.trim();
+    
+    if (
+        // !name || !email || !phone
+        name.length === 0 || email.length === 0 || phone.length === 0
+    ) {
+        alert ('Missing required field(s)');
+        return;
+    }
 
     if (resumeInput.files.length > 0 && resumeInput.files[0].name) {
         resume = resumeInput.files[0].name;
@@ -69,6 +85,11 @@ window.editApplication = function () {
 }
 
 window.submitApplication = function () {
+    if (resumeInput.files.length === 0) {
+        alert('Please upload your resume before proceeding.');
+        return; // Prevents the rest of the function from running
+    }
+
     alert("Your application has been submitted!");
 
     document.getElementById('jobForm').reset();

@@ -21,7 +21,7 @@
         <input type="email" id="email" required>
 
         <label>Phone Number:</label>
-        <input type="tel" id="phone" required>
+        <input type="tel" id="phone" required pattern="\d*" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
 
         <label>Upload Resume:</label>
         <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
