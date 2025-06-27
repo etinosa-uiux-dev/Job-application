@@ -1,35 +1,5 @@
-const jobs = [
-    {
-        title: "Accountant",
-        location: "California, US",
-        types: ["On-Site", "Full-Time"]
-    },
-    {
-        title: "Task Consultant",
-        location: "Australia, AU",
-        types: ["Hybrid", "Alternative Schedules"]
-    },
-    {
-        title: "Auditor",
-        location: "Sierra Leone, SL",
-        types: ["Hybrid", "Full-Time"]
-    },
-    {
-        title: "Loan Officer",
-        location: "Lagos, NG",
-        types: ["Hybrid", "Alternative Schedules"]
-    },
-    {
-        title: "Economist",
-        location: "San Francisco, CA",
-        types: ["100% Remote", "Full-Time"]
-    },
-    {
-        title: "Risk Manager",
-        location: "California, US",
-        types: ["Hybrid", "Full-Time"]
-    }
-];
+import { busJobs } from './6jobs.js';
+
 
 const container = document.querySelector(".js-card-contain");
 
@@ -42,9 +12,9 @@ window.onload = function () {
     displayJobs ();
 
     function displayJobs () {
-        jobs.forEach(job => {
+        busJobs.forEach( (job, index) => {
             const card = document.createElement("a");
-            card.href = "";
+            card.href = `../../apply.html?category=busJobs&index=${index}`;
             card.className = "card js-card";
 
             card.innerHTML = `

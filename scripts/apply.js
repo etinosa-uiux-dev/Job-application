@@ -1,4 +1,5 @@
 import { bus, it, sales, create, health, edu } from './jobs.js';
+import { busJobs, itJobs, salesJobs, createJobs, healthJobs, eduJobs, archiJobs } from '../pages/scripts/6jobs.js';
 
 
 const starthead = document.querySelector ('.starthead');
@@ -19,6 +20,13 @@ switch (category) {
     case 'create': jobList = create; break;
     case 'health': jobList = health; break;
     case 'edu': jobList = edu; break;
+    case 'busJobs': jobList = busJobs; break;
+    case 'itJobs': jobList = itJobs; break;
+    case 'salesJobs': jobList = salesJobs; break;
+    case 'createJobs': jobList = createJobs; break;
+    case 'healthJobs': jobList = healthJobs; break;
+    case 'eduJobs': jobList = eduJobs; break;
+    case 'archiJobs': jobList = archiJobs; break;
     default: jobList = [];
 }
 
@@ -27,7 +35,7 @@ if (!isNaN(index) && jobList[index]) {
     const selectedJob = jobList[index];
 
 
-    console.log (`${category}`,[index]);
+    // console.log (`${category}`,[index]);
 
     starthead.innerHTML = `
         <h1>Application  form for <span class="orangehead">${selectedJob.title}</span></h1>
