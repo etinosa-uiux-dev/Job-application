@@ -37,7 +37,7 @@ if (!isNaN(index) && jobList[index]) {
     `;
 } else {
     formHead.innerHTML = `
-    <h2>Application Form</h2><span class"orangehead">Job not found.</span>
+    <h2>Application Form</h2><p><div style="color:red;">Job not found.</div></p>
     `;
 }
 
