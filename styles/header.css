@@ -45,6 +45,16 @@ body {
     gap: 2rem;
 }
 
+.admin {
+    font-weight: 600;
+    color: #d36423;
+    text-decoration: none;
+}
+
+.admin:hover {
+    color: #ee8548;
+}
+
 .head-right .drop {
     font-weight: 600;
     display: flex;
