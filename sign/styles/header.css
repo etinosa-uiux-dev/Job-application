@@ -1,12 +1,8 @@
-/*
-green: #76eeb4
-orange: #d36423
-*/
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    /* height: 1500px; */
 }
 
 .header {
@@ -18,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 60rem;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -26,12 +22,8 @@ body {
     z-index: 999;
 }
 
-/* .header:hover {
-    background: radial-gradient(50% 50% at 0% 50%, #d36423 0, #fff 100%), #fff;
-} */
-
 .header img {
-    width: 200px;
+    width: 180px;
     transition: all 0.25s ease-in-out;
 }
 
@@ -45,19 +37,9 @@ body {
     gap: 2rem;
 }
 
-.lapo {
-    text-decoration: none;
-    color: grey;
-    font-weight: 600;
-}
-
-.lapo:hover {
-    color: #ee8548;
-}
-
 .admin {
     font-weight: 600;
-    color: grey;
+    color: #d36423;
     text-decoration: none;
 }
 
@@ -103,4 +85,32 @@ body {
 .signup:hover {
     background-color: #ee8548;
     color: white;
+}
+
+.sub-header {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 1px 3px #d36423;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
+}
+
+.sub-header a {
+    color: grey;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.sub-header a:hover {
+    color: #ee8548;
+    transform: scale(1.1);
 }

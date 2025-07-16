@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/sectionbg1.jpg');
+    background-image: url('../img/lapoHomeimg4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -108,7 +108,7 @@
     position: absolute;
     top: 50px;
     left: 1px;
-    width: 50%;
+    width: 86%;
     max-height: 200px;
     overflow: auto;
     padding: 2rem 1.5rem;
@@ -138,7 +138,7 @@
 }
 
 .searchbtns button {
-    background: transparent;
+    background: rgb(248, 248, 248);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +146,7 @@
     padding: .5rem;
     border: 1px solid white;
     border-radius: 10px;
-    color: white;
+    color: #d36423;
     font-family: cursive, Arial, Helvetica, sans-serif;
     font-size: larger;
     font-weight: 100;
@@ -156,5 +156,6 @@
 
 .searchbtns button:hover {
     background-color: #ee8548;
+    color: white;
     transform: scale(1.05);
 }
