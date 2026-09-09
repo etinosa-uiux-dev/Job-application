@@ -13,6 +13,8 @@ const eduBox = document.querySelector ('.edubox');
 const searchJobs = document.querySelector ('.js-search');
 const searchResults = document.querySelector ('.js-search-results');
 
+document.getElementById("current-year").textContent = new Date().getFullYear();
+
 window.onload = function () {
     if (!busBox) {
         // console.error("Element with class 'busbox' not found.");
